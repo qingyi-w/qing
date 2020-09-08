@@ -1,0 +1,13 @@
+git config --global user.name 'itcast'
+git config --global user.email 'haha@itcast.cn'
+
+git init  // 初始化某一个文件夹下的本地仓库
+git status // 查看当前工作区下, 有哪些文件被修改了或者被新增了
+git add  文件的路径 git add .    // 将工作区的文件的修改, 放到暂存区
+git commit -m '描述信息'  // 将暂存区的东西放到本地仓库, 从而形成了一个版本号
+git log // 查看版本历史记录
+git reset --hard  版本哈希号  // 形成了版本号之后, 进行的版本的切换
+git diff 文件的路径 // 在还未提交之前, 想看看,我们对于某一个文件究竟修改了啥
+git checkout 文件的路径   //  只是在工作区修改了, 还没有形成版本号, 这时我们想把某一个文件变成我们还没有修改之前的样子
+git show 版本的哈希号  // 查看某一个版本修改了哪些内容
+
